@@ -18,7 +18,7 @@ img::EasyImage l_systems_2d::generate_image(const ini::Configuration &configurat
     return draw2DLines(lines, size, background_color);
 }
 
-Lines2D l_systems_2d::drawLSystem(const LParser::LSystem2D &l_system, img::Color &color){
+Lines2D l_systems_2d::drawLSystem(LParser::LSystem2D &l_system, img::Color &color){
     Lines2D lines;
     Point2D point1(0, 0);
     Point2D point2(0, 0);
@@ -52,7 +52,7 @@ Lines2D l_systems_2d::drawLSystem(const LParser::LSystem2D &l_system, img::Color
     return lines;
 }
 
-std::string l_systems_2d::calculateSequence(const LParser::LSystem2D &l_system, std::string sequence, unsigned int itterations){
+std::string l_systems_2d::calculateSequence(LParser::LSystem2D &l_system, std::string sequence, unsigned int itterations){
     if(itterations == 0){return sequence;}
     std::string new_sequence;
 

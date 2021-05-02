@@ -20,6 +20,7 @@ img::EasyImage generate_image(const ini::Configuration &configuration)
 
 int main(int argc, char const* argv[])
 {
+    srand(time(nullptr));
     int retVal = 0;
     try
     {

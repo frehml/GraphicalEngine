@@ -201,7 +201,7 @@ namespace
 
 	};
 
-	void print_system(std::ostream&out, LParser::LSystem const& system)
+	void print_system(std::ostream&out, LParser::LSystem system)
 	{
 
 		if (system.get_alphabet().size() == 0)
@@ -317,6 +317,18 @@ namespace
 			{
 				case '+':
 				case '-':
+                case '[':
+                case ']':
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
 					break;
 				case '^':
 				case '&':
@@ -342,7 +354,7 @@ namespace
 		}
 		return num_parenthesis == 0;
 	}
-	void parse_rules(std::set<char> const& alphabet, std::map<char, std::string>& rules, stream_parser& parser, bool parse2D)
+	void parse_rules(std::set<char> const& alphabet, std::map<char, std::vector<std::string>>& rules, stream_parser& parser, bool parse2D)
 	{
 		parser.skip_comments_and_whitespace();
 		parser.assertChars("Rules");
@@ -359,8 +371,6 @@ namespace
 				throw LParser::ParserException("Invalid Alphabet character", parser.getLine(), parser.getCol());
 			if (alphabet.find(c) == alphabet.end())
 				throw LParser::ParserException(std::string("Replacement rule specified for char '") + c + "' which is not part of the alphabet. ", parser.getLine(), parser.getCol());
-			if (rules.find(c) != rules.end())
-				throw LParser::ParserException(std::string("Double entry '") + c + "' in rules specification ", parser.getLine(), parser.getCol());
 			char alphabet_char = c;
 			parser.skip_comments_and_whitespace();
 			parser.assertChars("->");
@@ -368,7 +378,7 @@ namespace
 			std::string rule = parser.readQuotedString();
 			if (!isValidRule(alphabet, rule, parse2D))
 				throw LParser::ParserException(std::string("Invalid rule specification for entry '") + alphabet_char + "' in rule specification", parser.getLine(), parser.getCol());
-			rules[alphabet_char] = rule;
+			rules[alphabet_char].push_back(rule);
 			parser.skip_comments_and_whitespace();
 			c = parser.getChar();
 			if (c == '}')
@@ -483,10 +493,24 @@ bool LParser::LSystem::draw(char c) const
 	assert(get_alphabet().find(c) != get_alphabet().end());
 	return drawfunction.find(c)->second;
 }
-std::string const& LParser::LSystem::get_replacement(char c) const
+std::string LParser::LSystem::get_replacement(char c)
 {
 	assert(get_alphabet().find(c) != get_alphabet().end());
-	return replacementrules.find(c)->second;
+	std::vector<std::string> &rules = replacementrules.find(c)->second;
+    std::string str = rules[0];
+    if(rules[0][0] != '[' && rules.size() == 1){return str;}
+
+    int magic_num = rand() % 100 + 1;
+    int num = 0;
+
+    for(std::string const &rule : rules){
+        num += std::stoi(rule.substr(1, 2));
+        if (magic_num <= num){
+            str = rule.substr(4, rule.size()-1);
+            return str;
+        }
+    }
+    return str;
 }
 double LParser::LSystem::get_angle() const
 {

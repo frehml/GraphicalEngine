@@ -23,6 +23,7 @@
 #include <string>
 #include <set>
 #include <exception>
+#include <vector>
 
 
 
@@ -85,7 +86,7 @@ namespace LParser
 	 */
 	class LSystem
 	{
-		protected:
+		public:
 
 			/**
 			 * \brief Constructor: creates an empty LSystem
@@ -135,7 +136,7 @@ namespace LParser
 			 *
 			 * \return	replacement string
 			 */
-			std::string const& get_replacement(char c) const;
+			std::string get_replacement(char c);
 
 			/**
 			 * \brief Returns the angle of the L-System.
@@ -182,7 +183,7 @@ namespace LParser
 		        /**
 		         * \brief the replacement rules of the l-system
 		         */
-			std::map<char, std::string> replacementrules;
+			std::map<char, std::vector<std::string>> replacementrules;
 
 		        /**
 		         * \brief the number of replacements of the l-system
