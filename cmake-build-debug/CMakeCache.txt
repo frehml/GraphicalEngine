@@ -157,7 +157,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Engine
+CMAKE_PROJECT_NAME:STATIC=engine
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
@@ -229,6 +229,12 @@ Engine_SOURCE_DIR:STATIC=/Users/frederic/Documents/Informatica/Sem2/CG/Engine
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//Value Computed by CMake
+engine_BINARY_DIR:STATIC=/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug
+
+//Value Computed by CMake
+engine_SOURCE_DIR:STATIC=/Users/frederic/Documents/Informatica/Sem2/CG/Engine
 
 
 ########################

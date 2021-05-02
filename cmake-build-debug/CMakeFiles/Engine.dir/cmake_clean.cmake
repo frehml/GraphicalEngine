@@ -1,10 +1,16 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Engine.dir/main.cpp.o"
-  "Engine"
-  "Engine.pdb"
+  "CMakeFiles/engine.dir/easy_image.cc.o"
+  "CMakeFiles/engine.dir/engine.cc.o"
+  "CMakeFiles/engine.dir/ini_configuration.cc.o"
+  "CMakeFiles/engine.dir/l_parser.cc.o"
+  "CMakeFiles/engine.dir/l_systems_2d.cpp.o"
+  "CMakeFiles/engine.dir/lines.cpp.o"
+  "CMakeFiles/engine.dir/tools.cpp.o"
+  "engine"
+  "engine.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
 foreach(lang CXX)
-  include(CMakeFiles/Engine.dir/cmake_clean_${lang}.cmake OPTIONAL)
+  include(CMakeFiles/engine.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="Engine"/>
+		<Option title="engine"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -12,6 +12,46 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -37,8 +77,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Engine">
-				<Option output="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Engine" prefix_auto="0" extension_auto="0"/>
+			<Target title="engine">
+				<Option output="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/engine" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -52,14 +92,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 Engine"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 engine"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Engine/fast">
-				<Option output="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Engine" prefix_auto="0" extension_auto="0"/>
+			<Target title="engine/fast">
+				<Option output="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/engine" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -73,15 +113,51 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 Engine/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 engine/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/main.cpp">
-			<Option target="Engine"/>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/easy_image.cc">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/easy_image.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/engine.cc">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/ini_configuration.cc">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/ini_configuration.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_parser.cc">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_parser.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_systems_2d.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_systems_2d.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/lines.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/lines.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/tools.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/tools.h">
+			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

@@ -69,50 +69,140 @@ CMAKE_SOURCE_DIR = /Users/frederic/Documents/Informatica/Sem2/CG/Engine
 CMAKE_BINARY_DIR = /Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug
 
 # Include any dependencies generated for this target.
-include CMakeFiles/Engine.dir/depend.make
+include CMakeFiles/engine.dir/depend.make
 
 # Include the progress variables for this target.
-include CMakeFiles/Engine.dir/progress.make
+include CMakeFiles/engine.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles/Engine.dir/flags.make
+include CMakeFiles/engine.dir/flags.make
 
-CMakeFiles/Engine.dir/main.cpp.o: CMakeFiles/Engine.dir/flags.make
-CMakeFiles/Engine.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Engine.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Engine.dir/main.cpp.o -c /Users/frederic/Documents/Informatica/Sem2/CG/Engine/main.cpp
+CMakeFiles/engine.dir/engine.cc.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/engine.cc.o: ../engine.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/engine.dir/engine.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/engine.cc.o -c /Users/frederic/Documents/Informatica/Sem2/CG/Engine/engine.cc
 
-CMakeFiles/Engine.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Engine.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/frederic/Documents/Informatica/Sem2/CG/Engine/main.cpp > CMakeFiles/Engine.dir/main.cpp.i
+CMakeFiles/engine.dir/engine.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/engine.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/frederic/Documents/Informatica/Sem2/CG/Engine/engine.cc > CMakeFiles/engine.dir/engine.cc.i
 
-CMakeFiles/Engine.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/frederic/Documents/Informatica/Sem2/CG/Engine/main.cpp -o CMakeFiles/Engine.dir/main.cpp.s
+CMakeFiles/engine.dir/engine.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/engine.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/frederic/Documents/Informatica/Sem2/CG/Engine/engine.cc -o CMakeFiles/engine.dir/engine.cc.s
 
-# Object files for target Engine
-Engine_OBJECTS = \
-"CMakeFiles/Engine.dir/main.cpp.o"
+CMakeFiles/engine.dir/easy_image.cc.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/easy_image.cc.o: ../easy_image.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/engine.dir/easy_image.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/easy_image.cc.o -c /Users/frederic/Documents/Informatica/Sem2/CG/Engine/easy_image.cc
 
-# External object files for target Engine
-Engine_EXTERNAL_OBJECTS =
+CMakeFiles/engine.dir/easy_image.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/easy_image.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/frederic/Documents/Informatica/Sem2/CG/Engine/easy_image.cc > CMakeFiles/engine.dir/easy_image.cc.i
 
-Engine: CMakeFiles/Engine.dir/main.cpp.o
-Engine: CMakeFiles/Engine.dir/build.make
-Engine: CMakeFiles/Engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Engine"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Engine.dir/link.txt --verbose=$(VERBOSE)
+CMakeFiles/engine.dir/easy_image.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/easy_image.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/frederic/Documents/Informatica/Sem2/CG/Engine/easy_image.cc -o CMakeFiles/engine.dir/easy_image.cc.s
+
+CMakeFiles/engine.dir/ini_configuration.cc.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/ini_configuration.cc.o: ../ini_configuration.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/engine.dir/ini_configuration.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/ini_configuration.cc.o -c /Users/frederic/Documents/Informatica/Sem2/CG/Engine/ini_configuration.cc
+
+CMakeFiles/engine.dir/ini_configuration.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/ini_configuration.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/frederic/Documents/Informatica/Sem2/CG/Engine/ini_configuration.cc > CMakeFiles/engine.dir/ini_configuration.cc.i
+
+CMakeFiles/engine.dir/ini_configuration.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/ini_configuration.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/frederic/Documents/Informatica/Sem2/CG/Engine/ini_configuration.cc -o CMakeFiles/engine.dir/ini_configuration.cc.s
+
+CMakeFiles/engine.dir/l_systems_2d.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/l_systems_2d.cpp.o: ../l_systems_2d.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/engine.dir/l_systems_2d.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/l_systems_2d.cpp.o -c /Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_systems_2d.cpp
+
+CMakeFiles/engine.dir/l_systems_2d.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/l_systems_2d.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_systems_2d.cpp > CMakeFiles/engine.dir/l_systems_2d.cpp.i
+
+CMakeFiles/engine.dir/l_systems_2d.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/l_systems_2d.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_systems_2d.cpp -o CMakeFiles/engine.dir/l_systems_2d.cpp.s
+
+CMakeFiles/engine.dir/l_parser.cc.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/l_parser.cc.o: ../l_parser.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/engine.dir/l_parser.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/l_parser.cc.o -c /Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_parser.cc
+
+CMakeFiles/engine.dir/l_parser.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/l_parser.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_parser.cc > CMakeFiles/engine.dir/l_parser.cc.i
+
+CMakeFiles/engine.dir/l_parser.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/l_parser.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_parser.cc -o CMakeFiles/engine.dir/l_parser.cc.s
+
+CMakeFiles/engine.dir/lines.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/lines.cpp.o: ../lines.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/engine.dir/lines.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/lines.cpp.o -c /Users/frederic/Documents/Informatica/Sem2/CG/Engine/lines.cpp
+
+CMakeFiles/engine.dir/lines.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/lines.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/frederic/Documents/Informatica/Sem2/CG/Engine/lines.cpp > CMakeFiles/engine.dir/lines.cpp.i
+
+CMakeFiles/engine.dir/lines.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/lines.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/frederic/Documents/Informatica/Sem2/CG/Engine/lines.cpp -o CMakeFiles/engine.dir/lines.cpp.s
+
+CMakeFiles/engine.dir/tools.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/tools.cpp.o: ../tools.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/engine.dir/tools.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/tools.cpp.o -c /Users/frederic/Documents/Informatica/Sem2/CG/Engine/tools.cpp
+
+CMakeFiles/engine.dir/tools.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/tools.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/frederic/Documents/Informatica/Sem2/CG/Engine/tools.cpp > CMakeFiles/engine.dir/tools.cpp.i
+
+CMakeFiles/engine.dir/tools.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/tools.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/frederic/Documents/Informatica/Sem2/CG/Engine/tools.cpp -o CMakeFiles/engine.dir/tools.cpp.s
+
+# Object files for target engine
+engine_OBJECTS = \
+"CMakeFiles/engine.dir/engine.cc.o" \
+"CMakeFiles/engine.dir/easy_image.cc.o" \
+"CMakeFiles/engine.dir/ini_configuration.cc.o" \
+"CMakeFiles/engine.dir/l_systems_2d.cpp.o" \
+"CMakeFiles/engine.dir/l_parser.cc.o" \
+"CMakeFiles/engine.dir/lines.cpp.o" \
+"CMakeFiles/engine.dir/tools.cpp.o"
+
+# External object files for target engine
+engine_EXTERNAL_OBJECTS =
+
+engine: CMakeFiles/engine.dir/engine.cc.o
+engine: CMakeFiles/engine.dir/easy_image.cc.o
+engine: CMakeFiles/engine.dir/ini_configuration.cc.o
+engine: CMakeFiles/engine.dir/l_systems_2d.cpp.o
+engine: CMakeFiles/engine.dir/l_parser.cc.o
+engine: CMakeFiles/engine.dir/lines.cpp.o
+engine: CMakeFiles/engine.dir/tools.cpp.o
+engine: CMakeFiles/engine.dir/build.make
+engine: CMakeFiles/engine.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable engine"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Engine.dir/build: Engine
+CMakeFiles/engine.dir/build: engine
 
-.PHONY : CMakeFiles/Engine.dir/build
+.PHONY : CMakeFiles/engine.dir/build
 
-CMakeFiles/Engine.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles/Engine.dir/cmake_clean.cmake
-.PHONY : CMakeFiles/Engine.dir/clean
+CMakeFiles/engine.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/engine.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/engine.dir/clean
 
-CMakeFiles/Engine.dir/depend:
-	cd /Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/frederic/Documents/Informatica/Sem2/CG/Engine /Users/frederic/Documents/Informatica/Sem2/CG/Engine /Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug /Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug /Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles/Engine.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles/Engine.dir/depend
+CMakeFiles/engine.dir/depend:
+	cd /Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/frederic/Documents/Informatica/Sem2/CG/Engine /Users/frederic/Documents/Informatica/Sem2/CG/Engine /Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug /Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug /Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles/engine.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/engine.dir/depend
 
