@@ -17,8 +17,11 @@ set(engine_sources
 	engine.cc
 	easy_image.cc easy_image.h
 	ini_configuration.cc ini_configuration.h
-	l_systems_2d.cpp l_systems_2d.h
-	l_parser.cc l_parser.h lines.cpp lines.h tools.cpp tools.h)
+	l_system_2d.cpp l_system_2d.h
+	l_parser.cc l_parser.h
+	lines.cpp lines.h
+	tools.cpp tools.h
+		vector3d.cc vector3d.h figure_3d.cpp figure_3d.h line_drawing.cpp line_drawing.h)
 
 ############################################################
 # Create an executable

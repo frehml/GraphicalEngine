@@ -243,6 +243,33 @@ engine.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/engine.cc.s
 .PHONY : engine.cc.s
 
+figure_3d.o: figure_3d.cpp.o
+
+.PHONY : figure_3d.o
+
+# target to build an object file
+figure_3d.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/figure_3d.cpp.o
+.PHONY : figure_3d.cpp.o
+
+figure_3d.i: figure_3d.cpp.i
+
+.PHONY : figure_3d.i
+
+# target to preprocess a source file
+figure_3d.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/figure_3d.cpp.i
+.PHONY : figure_3d.cpp.i
+
+figure_3d.s: figure_3d.cpp.s
+
+.PHONY : figure_3d.s
+
+# target to generate assembly for a file
+figure_3d.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/figure_3d.cpp.s
+.PHONY : figure_3d.cpp.s
+
 ini_configuration.o: ini_configuration.cc.o
 
 .PHONY : ini_configuration.o
@@ -297,32 +324,59 @@ l_parser.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_parser.cc.s
 .PHONY : l_parser.cc.s
 
-l_systems_2d.o: l_systems_2d.cpp.o
+l_system_2d.o: l_system_2d.cpp.o
 
-.PHONY : l_systems_2d.o
+.PHONY : l_system_2d.o
 
 # target to build an object file
-l_systems_2d.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_systems_2d.cpp.o
-.PHONY : l_systems_2d.cpp.o
+l_system_2d.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_system_2d.cpp.o
+.PHONY : l_system_2d.cpp.o
 
-l_systems_2d.i: l_systems_2d.cpp.i
+l_system_2d.i: l_system_2d.cpp.i
 
-.PHONY : l_systems_2d.i
+.PHONY : l_system_2d.i
 
 # target to preprocess a source file
-l_systems_2d.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_systems_2d.cpp.i
-.PHONY : l_systems_2d.cpp.i
+l_system_2d.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_system_2d.cpp.i
+.PHONY : l_system_2d.cpp.i
 
-l_systems_2d.s: l_systems_2d.cpp.s
+l_system_2d.s: l_system_2d.cpp.s
 
-.PHONY : l_systems_2d.s
+.PHONY : l_system_2d.s
 
 # target to generate assembly for a file
-l_systems_2d.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_systems_2d.cpp.s
-.PHONY : l_systems_2d.cpp.s
+l_system_2d.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_system_2d.cpp.s
+.PHONY : l_system_2d.cpp.s
+
+line_drawing.o: line_drawing.cpp.o
+
+.PHONY : line_drawing.o
+
+# target to build an object file
+line_drawing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/line_drawing.cpp.o
+.PHONY : line_drawing.cpp.o
+
+line_drawing.i: line_drawing.cpp.i
+
+.PHONY : line_drawing.i
+
+# target to preprocess a source file
+line_drawing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/line_drawing.cpp.i
+.PHONY : line_drawing.cpp.i
+
+line_drawing.s: line_drawing.cpp.s
+
+.PHONY : line_drawing.s
+
+# target to generate assembly for a file
+line_drawing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/line_drawing.cpp.s
+.PHONY : line_drawing.cpp.s
 
 lines.o: lines.cpp.o
 
@@ -378,6 +432,33 @@ tools.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/tools.cpp.s
 .PHONY : tools.cpp.s
 
+vector3d.o: vector3d.cc.o
+
+.PHONY : vector3d.o
+
+# target to build an object file
+vector3d.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/vector3d.cc.o
+.PHONY : vector3d.cc.o
+
+vector3d.i: vector3d.cc.i
+
+.PHONY : vector3d.i
+
+# target to preprocess a source file
+vector3d.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/vector3d.cc.i
+.PHONY : vector3d.cc.i
+
+vector3d.s: vector3d.cc.s
+
+.PHONY : vector3d.s
+
+# target to generate assembly for a file
+vector3d.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/vector3d.cc.s
+.PHONY : vector3d.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -397,21 +478,30 @@ help:
 	@echo "... engine.o"
 	@echo "... engine.i"
 	@echo "... engine.s"
+	@echo "... figure_3d.o"
+	@echo "... figure_3d.i"
+	@echo "... figure_3d.s"
 	@echo "... ini_configuration.o"
 	@echo "... ini_configuration.i"
 	@echo "... ini_configuration.s"
 	@echo "... l_parser.o"
 	@echo "... l_parser.i"
 	@echo "... l_parser.s"
-	@echo "... l_systems_2d.o"
-	@echo "... l_systems_2d.i"
-	@echo "... l_systems_2d.s"
+	@echo "... l_system_2d.o"
+	@echo "... l_system_2d.i"
+	@echo "... l_system_2d.s"
+	@echo "... line_drawing.o"
+	@echo "... line_drawing.i"
+	@echo "... line_drawing.s"
 	@echo "... lines.o"
 	@echo "... lines.i"
 	@echo "... lines.s"
 	@echo "... tools.o"
 	@echo "... tools.i"
 	@echo "... tools.s"
+	@echo "... vector3d.o"
+	@echo "... vector3d.i"
+	@echo "... vector3d.s"
 .PHONY : help
 
 

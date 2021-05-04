@@ -6,11 +6,21 @@ CMakeFiles/engine.dir/easy_image.cc.o: ../easy_image.h
 
 CMakeFiles/engine.dir/engine.cc.o: ../easy_image.h
 CMakeFiles/engine.dir/engine.cc.o: ../engine.cc
+CMakeFiles/engine.dir/engine.cc.o: ../figure_3d.h
 CMakeFiles/engine.dir/engine.cc.o: ../ini_configuration.h
 CMakeFiles/engine.dir/engine.cc.o: ../l_parser.h
-CMakeFiles/engine.dir/engine.cc.o: ../l_systems_2d.h
+CMakeFiles/engine.dir/engine.cc.o: ../l_system_2d.h
+CMakeFiles/engine.dir/engine.cc.o: ../line_drawing.h
 CMakeFiles/engine.dir/engine.cc.o: ../lines.h
 CMakeFiles/engine.dir/engine.cc.o: ../tools.h
+CMakeFiles/engine.dir/engine.cc.o: ../vector3d.h
+
+CMakeFiles/engine.dir/figure_3d.cpp.o: ../easy_image.h
+CMakeFiles/engine.dir/figure_3d.cpp.o: ../figure_3d.cpp
+CMakeFiles/engine.dir/figure_3d.cpp.o: ../figure_3d.h
+CMakeFiles/engine.dir/figure_3d.cpp.o: ../ini_configuration.h
+CMakeFiles/engine.dir/figure_3d.cpp.o: ../tools.h
+CMakeFiles/engine.dir/figure_3d.cpp.o: ../vector3d.h
 
 CMakeFiles/engine.dir/ini_configuration.cc.o: ../ini_configuration.cc
 CMakeFiles/engine.dir/ini_configuration.cc.o: ../ini_configuration.h
@@ -18,20 +28,41 @@ CMakeFiles/engine.dir/ini_configuration.cc.o: ../ini_configuration.h
 CMakeFiles/engine.dir/l_parser.cc.o: ../l_parser.cc
 CMakeFiles/engine.dir/l_parser.cc.o: ../l_parser.h
 
-CMakeFiles/engine.dir/l_systems_2d.cpp.o: ../easy_image.h
-CMakeFiles/engine.dir/l_systems_2d.cpp.o: ../ini_configuration.h
-CMakeFiles/engine.dir/l_systems_2d.cpp.o: ../l_parser.h
-CMakeFiles/engine.dir/l_systems_2d.cpp.o: ../l_systems_2d.cpp
-CMakeFiles/engine.dir/l_systems_2d.cpp.o: ../l_systems_2d.h
-CMakeFiles/engine.dir/l_systems_2d.cpp.o: ../lines.h
-CMakeFiles/engine.dir/l_systems_2d.cpp.o: ../tools.h
+CMakeFiles/engine.dir/l_system_2d.cpp.o: ../easy_image.h
+CMakeFiles/engine.dir/l_system_2d.cpp.o: ../figure_3d.h
+CMakeFiles/engine.dir/l_system_2d.cpp.o: ../ini_configuration.h
+CMakeFiles/engine.dir/l_system_2d.cpp.o: ../l_parser.h
+CMakeFiles/engine.dir/l_system_2d.cpp.o: ../l_system_2d.cpp
+CMakeFiles/engine.dir/l_system_2d.cpp.o: ../l_system_2d.h
+CMakeFiles/engine.dir/l_system_2d.cpp.o: ../lines.h
+CMakeFiles/engine.dir/l_system_2d.cpp.o: ../tools.h
+CMakeFiles/engine.dir/l_system_2d.cpp.o: ../vector3d.h
+
+CMakeFiles/engine.dir/line_drawing.cpp.o: ../easy_image.h
+CMakeFiles/engine.dir/line_drawing.cpp.o: ../figure_3d.h
+CMakeFiles/engine.dir/line_drawing.cpp.o: ../ini_configuration.h
+CMakeFiles/engine.dir/line_drawing.cpp.o: ../line_drawing.cpp
+CMakeFiles/engine.dir/line_drawing.cpp.o: ../line_drawing.h
+CMakeFiles/engine.dir/line_drawing.cpp.o: ../lines.h
+CMakeFiles/engine.dir/line_drawing.cpp.o: ../tools.h
+CMakeFiles/engine.dir/line_drawing.cpp.o: ../vector3d.h
 
 CMakeFiles/engine.dir/lines.cpp.o: ../easy_image.h
+CMakeFiles/engine.dir/lines.cpp.o: ../figure_3d.h
+CMakeFiles/engine.dir/lines.cpp.o: ../ini_configuration.h
 CMakeFiles/engine.dir/lines.cpp.o: ../lines.cpp
 CMakeFiles/engine.dir/lines.cpp.o: ../lines.h
+CMakeFiles/engine.dir/lines.cpp.o: ../tools.h
+CMakeFiles/engine.dir/lines.cpp.o: ../vector3d.h
 
 CMakeFiles/engine.dir/tools.cpp.o: ../easy_image.h
 CMakeFiles/engine.dir/tools.cpp.o: ../ini_configuration.h
 CMakeFiles/engine.dir/tools.cpp.o: ../tools.cpp
 CMakeFiles/engine.dir/tools.cpp.o: ../tools.h
+
+CMakeFiles/engine.dir/vector3d.cc.o: ../easy_image.h
+CMakeFiles/engine.dir/vector3d.cc.o: ../ini_configuration.h
+CMakeFiles/engine.dir/vector3d.cc.o: ../tools.h
+CMakeFiles/engine.dir/vector3d.cc.o: ../vector3d.cc
+CMakeFiles/engine.dir/vector3d.cc.o: ../vector3d.h
 

@@ -6,11 +6,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/easy_image.cc" "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles/engine.dir/easy_image.cc.o"
   "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/engine.cc" "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles/engine.dir/engine.cc.o"
+  "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/figure_3d.cpp" "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles/engine.dir/figure_3d.cpp.o"
   "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/ini_configuration.cc" "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles/engine.dir/ini_configuration.cc.o"
   "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_parser.cc" "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles/engine.dir/l_parser.cc.o"
-  "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_systems_2d.cpp" "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles/engine.dir/l_systems_2d.cpp.o"
+  "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_system_2d.cpp" "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles/engine.dir/l_system_2d.cpp.o"
+  "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/line_drawing.cpp" "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles/engine.dir/line_drawing.cpp.o"
   "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/lines.cpp" "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles/engine.dir/lines.cpp.o"
   "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/tools.cpp" "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles/engine.dir/tools.cpp.o"
+  "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/vector3d.cc" "/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles/engine.dir/vector3d.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

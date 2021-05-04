@@ -13,6 +13,12 @@ Point2D::Point2D(double longitude, double latitude) {
     y = latitude;
 }
 
+Line2D::Line2D(){
+    p1 = Point2D();
+    p2 = Point2D();
+    c = img::Color();
+}
+
 Line2D::Line2D(double x1, double y1, double x2, double y2, img::Color &color){
     p1 = Point2D(x1, y1);
     p2 = Point2D(x2, y2);
@@ -61,14 +67,44 @@ img::EasyImage draw2DLines(const Lines2D &lines, const int size, img::Color &bac
     double dx = (x_image/2)-DCx;
     double dy = (y_image/2)-DCy;
 
-    img::EasyImage image(x_image, y_image, background_color);
+    img::EasyImage image(roundToInt(x_image), roundToInt(y_image), background_color);
+
     for(auto const &line : lines){
-        unsigned int x1 = round(line.p1.x*d+dx);
-        unsigned int y1 = round(line.p1.y*d+dy);
-        unsigned int x2 = round(line.p2.x*d+dx);
-        unsigned int y2 = round(line.p2.y*d+dy);
+        unsigned int x1 = roundToInt(line.p1.x*d+dx);
+        unsigned int y1 = roundToInt(line.p1.y*d+dy);
+        unsigned int x2 = roundToInt(line.p2.x*d+dx);
+        unsigned int y2 = roundToInt(line.p2.y*d+dy);
         image.draw_line(x1, y1, x2, y2, line.c);
     }
 
     return image;
+}
+
+Point2D Point2D::doProjection(const Vector3D &point, const double d) {
+    Point2D new_point;
+
+    new_point.x = (d*point.x)/-point.z;
+    new_point.y = (d*point.y)/-point.z;
+    return new_point;
+}
+
+Lines2D doProjection(const Figures3D &figures){
+    Lines2D lines;
+
+    for(Figure const &figure : figures){
+        Points2D points;
+        for(Vector3D const &point : figure.points){
+            points.push_back(Point2D::doProjection(point, 1));
+        }
+        for(Face face : figure.faces){
+            double x1 = points[face.point_indexes[0]].x;
+            double y1 = points[face.point_indexes[0]].y;
+            double x2 = points[face.point_indexes[1]].x;
+            double y2 = points[face.point_indexes[1]].y;
+            img::Color color = figure.color;
+            Line2D line(x1, y1, x2, y2, color);
+            lines.push_back(line);
+        }
+    }
+    return lines;
 }

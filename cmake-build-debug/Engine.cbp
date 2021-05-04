@@ -129,6 +129,12 @@
 		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/engine.cc">
 			<Option target="engine"/>
 		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/figure_3d.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/figure_3d.h">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/ini_configuration.cc">
 			<Option target="engine"/>
 		</Unit>
@@ -141,10 +147,16 @@
 		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_parser.h">
 			<Option target="engine"/>
 		</Unit>
-		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_systems_2d.cpp">
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_system_2d.cpp">
 			<Option target="engine"/>
 		</Unit>
-		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_systems_2d.h">
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_system_2d.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/line_drawing.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/line_drawing.h">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/lines.cpp">
@@ -157,6 +169,12 @@
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/tools.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/vector3d.cc">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/vector3d.h">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/CMakeLists.txt">

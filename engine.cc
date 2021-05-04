@@ -1,6 +1,7 @@
 #include "easy_image.h"
 #include "ini_configuration.h"
-#include "l_systems_2d.h"
+#include "l_system_2d.h"
+#include "line_drawing.h"
 
 #include <fstream>
 #include <iostream>
@@ -13,7 +14,9 @@ img::EasyImage generate_image(const ini::Configuration &configuration)
     img::EasyImage image;
 
     if (type == "2DLSystem")
-        image = l_systems_2d::generate_image(configuration);
+        image = LSystem::generateImage(configuration);
+    else if (type == "Wireframe")
+        image = LineDrawing::generateImage(configuration);
 
     return image;
 }
@@ -34,7 +37,6 @@ int main(int argc, char const* argv[])
         }
         for(std::string fileName : args)
         {
-            std::cout << fileName << std::endl;
             ini::Configuration conf;
             try
             {

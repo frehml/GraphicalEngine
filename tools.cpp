@@ -2,12 +2,19 @@
 // Created by frehml on 01/05/2021.
 //
 
+
 #include "tools.h"
 
-img::Color make_color(ini::DoubleTuple color_tuple){
-    uint8_t red = color_tuple[0]*255;
-    uint8_t green = color_tuple[1]*255;
-    uint8_t blue = color_tuple[2]*255;
-    img::Color color(red, green, blue);
-    return color;
+void make_color(img::Color &color, ini::DoubleTuple color_tuple){
+    color.red = (uint8_t) color_tuple[0]*255;
+    color.green = (uint8_t) color_tuple[1]*255;
+    color.blue = (uint8_t) color_tuple[2]*255;
+}
+
+int roundToInt(double d) {
+    return static_cast<int>(std::round(d));
+}
+
+double degToRad(double d){
+    return d *M_PI/180;
 }
