@@ -253,7 +253,7 @@ Matrix Matrix::rotateX(const double &angle){
     matrix( 4, 4) = 1;
     matrix( 2, 2) = cos((angle));
     matrix( 2, 3) = sin((angle));
-    matrix( 4, 2) = -sin((angle));
+    matrix( 3, 2) = -sin((angle));
     matrix( 3, 3) = cos((angle));
     return matrix;
 }

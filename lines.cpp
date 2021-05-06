@@ -90,12 +90,12 @@ Point2D Point2D::doProjection(const Vector3D &point, const double d) {
 
 Lines2D doProjection(const Figures3D &figures){
     Lines2D lines;
-
     for(Figure const &figure : figures){
         Points2D points;
         for(Vector3D const &point : figure.points){
             points.push_back(Point2D::doProjection(point, 1));
         }
+
         for(Face face : figure.faces){
             double x1 = points[face.point_indexes[0]].x;
             double y1 = points[face.point_indexes[0]].y;
@@ -106,5 +106,6 @@ Lines2D doProjection(const Figures3D &figures){
             lines.push_back(line);
         }
     }
+
     return lines;
 }

@@ -11,10 +11,10 @@
 
 class LineDrawing {
 public:
-    static void parseLine(Figure &figure, const ini::Configuration &configuration);
-    static void parsePoint(Figure &figure, const ini::Configuration &configuration);
-    static void parse(Figure &figure, const ini::Configuration &configuration);
-    static void doTransformations(Figure &figure, const ini::Configuration &configuration);
+    static void parseLine(Figure &figure, const ini::Configuration &configuration, std::string &name);
+    static void parsePoint(Figure &figure, const ini::Configuration &configuration, std::string &name);
+    static void parse(Figure &figure, const ini::Configuration &configuration, std::string &name);
+    static void doTransformations(Figure &figure, const ini::Configuration &configuration, std::string &name);
     static img::EasyImage generateImage(const ini::Configuration &configuration);
 };
 
