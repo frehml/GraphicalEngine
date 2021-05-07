@@ -20,7 +20,6 @@
 #define VECTOR_INCLUDED
 
 #include <iostream>
-#include "tools.h"
 
 #define NR_DIMS 3
 

@@ -120,6 +120,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/Wireframe.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/Wireframe.h">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/easy_image.cc">
 			<Option target="engine"/>
 		</Unit>
@@ -151,12 +157,6 @@
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/l_system_2d.h">
-			<Option target="engine"/>
-		</Unit>
-		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/line_drawing.cpp">
-			<Option target="engine"/>
-		</Unit>
-		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/line_drawing.h">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/Users/frederic/Documents/Informatica/Sem2/CG/Engine/lines.cpp">

@@ -15,7 +15,7 @@
 
 class LSystem {
 public:
-    static img::EasyImage generateImage(const ini::Configuration &configuration);
+    static img::EasyImage generateImage(const ini::Configuration &configuration, img::Color &background_color, int &size);
     static Lines2D drawLSystem(LParser::LSystem2D &l_system, img::Color &color);
     static std::string calculateSequence(LParser::LSystem2D &l_system, std::string sequence, unsigned int itterations);
 };

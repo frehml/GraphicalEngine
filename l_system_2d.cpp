@@ -4,12 +4,9 @@
 
 #include "l_system_2d.h"
 
-img::EasyImage LSystem::generateImage(const ini::Configuration &configuration) {
-    int size = configuration["General"]["size"].as_int_or_die();
+img::EasyImage LSystem::generateImage(const ini::Configuration &configuration, img::Color &background_color, int &size) {
     img::Color line_color;
-    img::Color background_color;
     make_color(line_color, configuration["2DLSystem"]["color"].as_double_tuple_or_die());
-    make_color(background_color, configuration["General"]["backgroundcolor"].as_double_tuple_or_die());
 
     LParser::LSystem2D l_system;
     std::ifstream input_stream(configuration["2DLSystem"]["inputfile"]);

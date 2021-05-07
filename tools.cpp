@@ -6,9 +6,9 @@
 #include "tools.h"
 
 void make_color(img::Color &color, ini::DoubleTuple color_tuple){
-    color.red = (uint8_t) color_tuple[0]*255;
-    color.green = (uint8_t) color_tuple[1]*255;
-    color.blue = (uint8_t) color_tuple[2]*255;
+    color.red =  color_tuple[0]*255;
+    color.green =  color_tuple[1]*255;
+    color.blue =  color_tuple[2]*255;
 }
 
 int roundToInt(double d) {
@@ -17,4 +17,10 @@ int roundToInt(double d) {
 
 double degToRad(double d){
     return d *M_PI/180;
+}
+
+void make_vector(Vector3D &vec, ini::DoubleTuple vector){
+    vec.x = vector[0];
+    vec.y = vector[1];
+    vec.z = vector[2];
 }

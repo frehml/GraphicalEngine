@@ -189,6 +189,33 @@ engine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/build
 .PHONY : engine/fast
 
+Wireframe.o: Wireframe.cpp.o
+
+.PHONY : Wireframe.o
+
+# target to build an object file
+Wireframe.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Wireframe.cpp.o
+.PHONY : Wireframe.cpp.o
+
+Wireframe.i: Wireframe.cpp.i
+
+.PHONY : Wireframe.i
+
+# target to preprocess a source file
+Wireframe.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Wireframe.cpp.i
+.PHONY : Wireframe.cpp.i
+
+Wireframe.s: Wireframe.cpp.s
+
+.PHONY : Wireframe.s
+
+# target to generate assembly for a file
+Wireframe.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Wireframe.cpp.s
+.PHONY : Wireframe.cpp.s
+
 easy_image.o: easy_image.cc.o
 
 .PHONY : easy_image.o
@@ -351,33 +378,6 @@ l_system_2d.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_system_2d.cpp.s
 .PHONY : l_system_2d.cpp.s
 
-line_drawing.o: line_drawing.cpp.o
-
-.PHONY : line_drawing.o
-
-# target to build an object file
-line_drawing.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/line_drawing.cpp.o
-.PHONY : line_drawing.cpp.o
-
-line_drawing.i: line_drawing.cpp.i
-
-.PHONY : line_drawing.i
-
-# target to preprocess a source file
-line_drawing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/line_drawing.cpp.i
-.PHONY : line_drawing.cpp.i
-
-line_drawing.s: line_drawing.cpp.s
-
-.PHONY : line_drawing.s
-
-# target to generate assembly for a file
-line_drawing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/line_drawing.cpp.s
-.PHONY : line_drawing.cpp.s
-
 lines.o: lines.cpp.o
 
 .PHONY : lines.o
@@ -472,6 +472,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... engine"
+	@echo "... Wireframe.o"
+	@echo "... Wireframe.i"
+	@echo "... Wireframe.s"
 	@echo "... easy_image.o"
 	@echo "... easy_image.i"
 	@echo "... easy_image.s"
@@ -490,9 +493,6 @@ help:
 	@echo "... l_system_2d.o"
 	@echo "... l_system_2d.i"
 	@echo "... l_system_2d.s"
-	@echo "... line_drawing.o"
-	@echo "... line_drawing.i"
-	@echo "... line_drawing.s"
 	@echo "... lines.o"
 	@echo "... lines.i"
 	@echo "... lines.s"

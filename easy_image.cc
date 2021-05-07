@@ -17,8 +17,8 @@
  */
 #include "easy_image.h"
 #include <algorithm>
-#include <assert.h>
-#include <math.h>
+#include <cassert>
+#include <cmath>
 #include <iostream>
 
 #ifndef le32toh
@@ -132,7 +132,7 @@ img::UnsupportedFileTypeException::UnsupportedFileTypeException(const Unsupporte
 , message(original.message)
 {
 }
-img::UnsupportedFileTypeException::~UnsupportedFileTypeException() throw ()
+img::UnsupportedFileTypeException::~UnsupportedFileTypeException() noexcept
 {
 }
 img::UnsupportedFileTypeException& img::UnsupportedFileTypeException::operator=(UnsupportedFileTypeException const& original)
@@ -140,7 +140,7 @@ img::UnsupportedFileTypeException& img::UnsupportedFileTypeException::operator=(
 	this->message = original.message;
 	return *this;
 }
-const char* img::UnsupportedFileTypeException::what() const throw ()
+const char* img::UnsupportedFileTypeException::what() const noexcept
 {
 	return message.c_str();
 }
@@ -150,7 +150,7 @@ img::EasyImage::EasyImage() :
 {
 }
 
-img::EasyImage::EasyImage(unsigned int _width, unsigned int _height, Color color) :
+img::EasyImage::EasyImage(unsigned int _width, unsigned int _height, Color const &color) :
 	width(_width), height(_height), bitmap(width * height, color)
 {
 }
@@ -183,7 +183,7 @@ unsigned int img::EasyImage::get_height() const
 	return height;
 }
 
-void img::EasyImage::clear(Color color)
+void img::EasyImage::clear(Color const &color)
 {
 	for (std::vector<Color>::iterator i = bitmap.begin(); i != bitmap.end(); i++)
 	{
@@ -205,7 +205,7 @@ img::Color const& img::EasyImage::operator()(unsigned int x, unsigned int y) con
 	return bitmap.at(x * height + y);
 }
 
-void img::EasyImage::draw_line(unsigned int x0, unsigned int y0, unsigned int x1, unsigned int y1, Color color)
+void img::EasyImage::draw_line(unsigned int x0, unsigned int y0, unsigned int x1, unsigned int y1, Color const &color)
 {
 	assert(x0 < this->width && y0 < this->height);
 	assert(x1 < this->width && y1 < this->height);

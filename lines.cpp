@@ -76,7 +76,6 @@ img::EasyImage draw2DLines(const Lines2D &lines, const int size, img::Color &bac
         unsigned int y2 = roundToInt(line.p2.y*d+dy);
         image.draw_line(x1, y1, x2, y2, line.c);
     }
-
     return image;
 }
 

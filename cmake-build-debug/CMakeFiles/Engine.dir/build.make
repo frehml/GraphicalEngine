@@ -194,18 +194,18 @@ CMakeFiles/engine.dir/figure_3d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/figure_3d.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/frederic/Documents/Informatica/Sem2/CG/Engine/figure_3d.cpp -o CMakeFiles/engine.dir/figure_3d.cpp.s
 
-CMakeFiles/engine.dir/line_drawing.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/line_drawing.cpp.o: ../line_drawing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/engine.dir/line_drawing.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/line_drawing.cpp.o -c /Users/frederic/Documents/Informatica/Sem2/CG/Engine/line_drawing.cpp
+CMakeFiles/engine.dir/Wireframe.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/Wireframe.cpp.o: ../Wireframe.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/engine.dir/Wireframe.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/Wireframe.cpp.o -c /Users/frederic/Documents/Informatica/Sem2/CG/Engine/Wireframe.cpp
 
-CMakeFiles/engine.dir/line_drawing.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/line_drawing.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/frederic/Documents/Informatica/Sem2/CG/Engine/line_drawing.cpp > CMakeFiles/engine.dir/line_drawing.cpp.i
+CMakeFiles/engine.dir/Wireframe.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/Wireframe.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/frederic/Documents/Informatica/Sem2/CG/Engine/Wireframe.cpp > CMakeFiles/engine.dir/Wireframe.cpp.i
 
-CMakeFiles/engine.dir/line_drawing.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/line_drawing.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/frederic/Documents/Informatica/Sem2/CG/Engine/line_drawing.cpp -o CMakeFiles/engine.dir/line_drawing.cpp.s
+CMakeFiles/engine.dir/Wireframe.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/Wireframe.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/frederic/Documents/Informatica/Sem2/CG/Engine/Wireframe.cpp -o CMakeFiles/engine.dir/Wireframe.cpp.s
 
 # Object files for target engine
 engine_OBJECTS = \
@@ -218,7 +218,7 @@ engine_OBJECTS = \
 "CMakeFiles/engine.dir/tools.cpp.o" \
 "CMakeFiles/engine.dir/vector3d.cc.o" \
 "CMakeFiles/engine.dir/figure_3d.cpp.o" \
-"CMakeFiles/engine.dir/line_drawing.cpp.o"
+"CMakeFiles/engine.dir/Wireframe.cpp.o"
 
 # External object files for target engine
 engine_EXTERNAL_OBJECTS =
@@ -232,7 +232,7 @@ engine: CMakeFiles/engine.dir/lines.cpp.o
 engine: CMakeFiles/engine.dir/tools.cpp.o
 engine: CMakeFiles/engine.dir/vector3d.cc.o
 engine: CMakeFiles/engine.dir/figure_3d.cpp.o
-engine: CMakeFiles/engine.dir/line_drawing.cpp.o
+engine: CMakeFiles/engine.dir/Wireframe.cpp.o
 engine: CMakeFiles/engine.dir/build.make
 engine: CMakeFiles/engine.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/frederic/Documents/Informatica/Sem2/CG/Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable engine"

@@ -1,7 +1,7 @@
 #include "easy_image.h"
 #include "ini_configuration.h"
 #include "l_system_2d.h"
-#include "line_drawing.h"
+#include "Wireframe.h"
 
 #include <fstream>
 #include <iostream>
@@ -10,15 +10,16 @@
 
 img::EasyImage generate_image(const ini::Configuration &configuration)
 {
-    std::string type = configuration["General"]["type"].as_string_or_die();
     img::EasyImage image;
+    img::Color background_color;
+    int size = configuration["General"]["size"].as_int_or_die();
+    make_color(background_color, configuration["General"]["backgroundcolor"].as_double_tuple_or_die());
+    std::string type = configuration["General"]["type"].as_string_or_die();
 
     if (type == "2DLSystem")
-        image = LSystem::generateImage(configuration);
+        return LSystem::generateImage(configuration, background_color, size);
     else if (type == "Wireframe")
-        image = LineDrawing::generateImage(configuration);
-
-    return image;
+        return Wireframe::generateImage(configuration, background_color, size);
 }
 
 int main(int argc, char const* argv[])

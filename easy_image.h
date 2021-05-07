@@ -17,7 +17,7 @@
  */
 #ifndef EASY_IMAGE_INCLUDED
 #define EASY_IMAGE_INCLUDED
-#include <stdint.h>
+#include <cstdint>
 #include <vector>
 #include <iostream>
 #include <list>
@@ -91,7 +91,7 @@ namespace img
 			 * \param msg	The message explaining what went wrong
 			 *
 			 */
-			UnsupportedFileTypeException(std::string const& msg);
+			explicit UnsupportedFileTypeException(std::string const& msg);
 
                         /**
                          * \brief Copy Constructor
@@ -104,7 +104,7 @@ namespace img
 			/**
 			 * \brief Destructor
 			 */
-			virtual ~UnsupportedFileTypeException() throw ();
+			virtual ~UnsupportedFileTypeException() noexcept;
 
 			/**
 			 * \brief Assignment operator
@@ -118,7 +118,7 @@ namespace img
                          *
                          * \return A description of the error hat occurred.
                          */
-			virtual const char *what() const throw ();
+			virtual const char *what() const noexcept;
 	};
 	/**
 	 * \brief This class implements a 'minor' image-library that supports basic operations such as setting and retrieving a pixel, and drawing a line.
@@ -138,7 +138,7 @@ namespace img
 			 * \param height	the height of the image
 			 * \param color		(optional) the background color of the image
 			 */
-			EasyImage(unsigned int width, unsigned int height, Color color = Color());
+			EasyImage(unsigned int width, unsigned int height, Color const &color = Color());
 
 			/**
 			 * \brief Copy Constructor
@@ -201,7 +201,7 @@ namespace img
 			 *
 			 * \param color		The color to be assigned to each pixel
 			 */
-			void clear(Color color = Color());
+			void clear(Color const &color = Color());
 
 			/**
 			 * \brief Draws a line from pixel (x0,y0) to pixel (x1,y1) in the specified color
@@ -218,7 +218,7 @@ namespace img
 			 * 	assert(x1 < getWidth())
 			 * 	assert(y1 < getHeight())
 			 */
-			void draw_line(unsigned int x0, unsigned int y0, unsigned int x1, unsigned int y1, Color color);
+			void draw_line(unsigned int x0, unsigned int y0, unsigned int x1, unsigned int y1, Color const &color);
 
 		private:
 			friend std::istream& operator>>(std::istream& in, EasyImage & image);

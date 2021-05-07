@@ -21,7 +21,7 @@ set(engine_sources
 	l_parser.cc l_parser.h
 	lines.cpp lines.h
 	tools.cpp tools.h
-		vector3d.cc vector3d.h figure_3d.cpp figure_3d.h line_drawing.cpp line_drawing.h)
+		vector3d.cc vector3d.h figure_3d.cpp figure_3d.h Wireframe.cpp Wireframe.h)
 
 ############################################################
 # Create an executable
