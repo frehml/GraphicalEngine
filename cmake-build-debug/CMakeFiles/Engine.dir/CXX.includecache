@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/frederic/Documents/Informatica/Sem2/CG/Engine/Wireframe.cpp
-Wireframe.h
-/Users/frederic/Documents/Informatica/Sem2/CG/Engine/Wireframe.h
-
-/Users/frederic/Documents/Informatica/Sem2/CG/Engine/Wireframe.h
-vector3d.h
-/Users/frederic/Documents/Informatica/Sem2/CG/Engine/vector3d.h
-figure_3d.h
-/Users/frederic/Documents/Informatica/Sem2/CG/Engine/figure_3d.h
-lines.h
-/Users/frederic/Documents/Informatica/Sem2/CG/Engine/lines.h
-
 /Users/frederic/Documents/Informatica/Sem2/CG/Engine/easy_image.h
 cstdint
 -
@@ -27,6 +15,16 @@ iostream
 -
 list
 -
+z_buffer.h
+/Users/frederic/Documents/Informatica/Sem2/CG/Engine/z_buffer.h
+vector3d.h
+/Users/frederic/Documents/Informatica/Sem2/CG/Engine/vector3d.h
+
+/Users/frederic/Documents/Informatica/Sem2/CG/Engine/figure_3d.cpp
+figure_3d.h
+/Users/frederic/Documents/Informatica/Sem2/CG/Engine/figure_3d.h
+lines.h
+/Users/frederic/Documents/Informatica/Sem2/CG/Engine/lines.h
 
 /Users/frederic/Documents/Informatica/Sem2/CG/Engine/figure_3d.h
 vector
@@ -37,6 +35,8 @@ easy_image.h
 /Users/frederic/Documents/Informatica/Sem2/CG/Engine/easy_image.h
 tools.h
 /Users/frederic/Documents/Informatica/Sem2/CG/Engine/tools.h
+numeric
+-
 
 /Users/frederic/Documents/Informatica/Sem2/CG/Engine/ini_configuration.h
 iostream
@@ -57,6 +57,8 @@ utility
 -
 algorithm
 -
+z_buffer.h
+/Users/frederic/Documents/Informatica/Sem2/CG/Engine/z_buffer.h
 easy_image.h
 /Users/frederic/Documents/Informatica/Sem2/CG/Engine/easy_image.h
 tools.h
@@ -77,4 +79,16 @@ vector3d.h
 /Users/frederic/Documents/Informatica/Sem2/CG/Engine/vector3d.h
 iostream
 -
+
+/Users/frederic/Documents/Informatica/Sem2/CG/Engine/z_buffer.h
+vector
+-
+limits
+-
+iostream
+-
+ini_configuration.h
+/Users/frederic/Documents/Informatica/Sem2/CG/Engine/ini_configuration.h
+easy_image.h
+/Users/frederic/Documents/Informatica/Sem2/CG/Engine/easy_image.h
 

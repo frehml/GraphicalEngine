@@ -297,6 +297,33 @@ figure_3d.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/figure_3d.cpp.s
 .PHONY : figure_3d.cpp.s
 
+fractal.o: fractal.cpp.o
+
+.PHONY : fractal.o
+
+# target to build an object file
+fractal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/fractal.cpp.o
+.PHONY : fractal.cpp.o
+
+fractal.i: fractal.cpp.i
+
+.PHONY : fractal.i
+
+# target to preprocess a source file
+fractal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/fractal.cpp.i
+.PHONY : fractal.cpp.i
+
+fractal.s: fractal.cpp.s
+
+.PHONY : fractal.s
+
+# target to generate assembly for a file
+fractal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/fractal.cpp.s
+.PHONY : fractal.cpp.s
+
 ini_configuration.o: ini_configuration.cc.o
 
 .PHONY : ini_configuration.o
@@ -351,32 +378,32 @@ l_parser.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_parser.cc.s
 .PHONY : l_parser.cc.s
 
-l_system_2d.o: l_system_2d.cpp.o
+l_system.o: l_system.cpp.o
 
-.PHONY : l_system_2d.o
+.PHONY : l_system.o
 
 # target to build an object file
-l_system_2d.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_system_2d.cpp.o
-.PHONY : l_system_2d.cpp.o
+l_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_system.cpp.o
+.PHONY : l_system.cpp.o
 
-l_system_2d.i: l_system_2d.cpp.i
+l_system.i: l_system.cpp.i
 
-.PHONY : l_system_2d.i
+.PHONY : l_system.i
 
 # target to preprocess a source file
-l_system_2d.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_system_2d.cpp.i
-.PHONY : l_system_2d.cpp.i
+l_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_system.cpp.i
+.PHONY : l_system.cpp.i
 
-l_system_2d.s: l_system_2d.cpp.s
+l_system.s: l_system.cpp.s
 
-.PHONY : l_system_2d.s
+.PHONY : l_system.s
 
 # target to generate assembly for a file
-l_system_2d.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_system_2d.cpp.s
-.PHONY : l_system_2d.cpp.s
+l_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/l_system.cpp.s
+.PHONY : l_system.cpp.s
 
 lines.o: lines.cpp.o
 
@@ -459,6 +486,33 @@ vector3d.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/vector3d.cc.s
 .PHONY : vector3d.cc.s
 
+z_buffer.o: z_buffer.cpp.o
+
+.PHONY : z_buffer.o
+
+# target to build an object file
+z_buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/z_buffer.cpp.o
+.PHONY : z_buffer.cpp.o
+
+z_buffer.i: z_buffer.cpp.i
+
+.PHONY : z_buffer.i
+
+# target to preprocess a source file
+z_buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/z_buffer.cpp.i
+.PHONY : z_buffer.cpp.i
+
+z_buffer.s: z_buffer.cpp.s
+
+.PHONY : z_buffer.s
+
+# target to generate assembly for a file
+z_buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/z_buffer.cpp.s
+.PHONY : z_buffer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -484,15 +538,18 @@ help:
 	@echo "... figure_3d.o"
 	@echo "... figure_3d.i"
 	@echo "... figure_3d.s"
+	@echo "... fractal.o"
+	@echo "... fractal.i"
+	@echo "... fractal.s"
 	@echo "... ini_configuration.o"
 	@echo "... ini_configuration.i"
 	@echo "... ini_configuration.s"
 	@echo "... l_parser.o"
 	@echo "... l_parser.i"
 	@echo "... l_parser.s"
-	@echo "... l_system_2d.o"
-	@echo "... l_system_2d.i"
-	@echo "... l_system_2d.s"
+	@echo "... l_system.o"
+	@echo "... l_system.i"
+	@echo "... l_system.s"
 	@echo "... lines.o"
 	@echo "... lines.i"
 	@echo "... lines.s"
@@ -502,6 +559,9 @@ help:
 	@echo "... vector3d.o"
 	@echo "... vector3d.i"
 	@echo "... vector3d.s"
+	@echo "... z_buffer.o"
+	@echo "... z_buffer.i"
+	@echo "... z_buffer.s"
 .PHONY : help
 
 

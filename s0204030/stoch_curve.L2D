@@ -1,0 +1,23 @@
+Alphabet = {L, R, F}
+
+Draw = {
+        L -> 1,
+        R -> 1,
+        F -> 1
+}
+
+Rules = {
+        L -> "[10]+RF-LFL-FR+",
+        L -> "[90]-R+RLFL-FRL++++++LLLLFFRL",
+
+        R -> "[50]-LF+RFR+FL-",
+        R -> "[50]-RF-RFR-FL----RLFR",
+
+        F -> "[33]F",
+        F -> "[67]+F-R+LLLLLLL"
+}
+
+Initiator     = "L"
+Angle         = 90
+StartingAngle = 0
+Iterations    = 4
